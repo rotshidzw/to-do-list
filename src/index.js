@@ -3,12 +3,17 @@
 import './style.css';
 
 const todo = [
-  { descr: 'my first to do list ',
-   comple: true,
-    index: 0 },
-  { descr: 'my second to do list ',
-   comple: false, 
-    index: 1 },
+{
+  descr: 'my first to do list ',
+  comple: true,
+  index: 0,
+  },
+
+{
+  descr: 'my second to do list ',
+  comple: false, 
+  index: 1,
+  },
 ];
 
 function todoList() {
