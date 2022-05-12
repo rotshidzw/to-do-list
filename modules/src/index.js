@@ -1,4 +1,3 @@
-import * as task from './populate.js';
 import * as stat from './status.js';
 import './style.css';
 
@@ -45,23 +44,6 @@ function todoList() {
   });
 }
 
-function removeItem(e) {
-  if (!e.target.classList.contains('deleteBtn')) {
-    return;
-  }
-  const btn = e.target;
-  list.forEach((task) => {
-    if (task.description === btn.parentElement.children[1].value) {
-      list.splice(list.indexOf(task), 1);
-    }
-  });
-  btn.closest('li').remove();
-  task.updateIndex(list);
-  stat.saveLocal(list);
-}
-
-listEl.addEventListener('click', removeItem);
-todoList();
 document.querySelector('#task-Form').addEventListener('submit', (event) => {
   event.preventDefault();
   task.add(list);

@@ -1,4 +1,15 @@
-import { saveLocal } from './status.js';
+export function saveLocal(list) {
+  window.localStorage.setItem('localTasks', JSON.stringify(list));
+}
+
+export function status(elem, list) {
+  list.forEach((task) => {
+    if (task === elem) {
+      task.isCompleted = !task.isCompleted;
+    }
+  });
+  saveLocal(list);
+}
 
 export function add(list) {
   list.push({ description: document.querySelector('#task-1').value, isCompleted: false, index: list.length + 1 });
