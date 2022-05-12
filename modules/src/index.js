@@ -1,5 +1,4 @@
-import * as task from './status.js';
-import * as stat from './status.js';
+import * as task  from './status.js';
 import './style.css';
 
 let list = [];
@@ -21,7 +20,7 @@ function todoList() {
     checkbox.type = 'checkbox';
     checkbox.classList.add('task-check');
     checkbox.addEventListener('click', () => {
-      stat.status(item, list);
+      task.status(item, list);
       todoList();
     });
     checkbox.checked = item.isCompleted;
@@ -32,7 +31,7 @@ function todoList() {
     taskText.addEventListener('change', () => {
       if (taskText.value.length > 0) {
         item.description = taskText.value;
-        stat.saveLocal(list);
+        task.saveLocal(list);
       }
     });
     taskElement.appendChild(taskText);
