@@ -1,3 +1,4 @@
+import * as task from './status.js';
 import * as stat from './status.js';
 import './style.css';
 
@@ -35,7 +36,6 @@ function todoList() {
       }
     });
     taskElement.appendChild(taskText);
-
     const dragIcon = document.createElement('button');
     dragIcon.classList = 'far fa-trash-alt deleteBtn';
     taskElement.appendChild(dragIcon);
