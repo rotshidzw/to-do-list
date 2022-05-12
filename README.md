@@ -2,8 +2,6 @@
 
 # To Do list
 
->In this project, you will implement the CRUD (create, update, delete) methods. All the elements of the user interface will be fully functional and your application will be completed.
-
 
 ## Built With
 
