@@ -1,5 +1,14 @@
+<<<<<<< inter-list
 # Awesome-books
 This is a project that allows users to add/remove book from a list.
+=======
+![](https://img.shields.io/badge/Microverse-blueviolet)
+
+# Project Name
+#TO DO LIST
+> Description the project.
+
+>>>>>>> main
 
 ## Built With
 - HTML5
