@@ -1,4 +1,4 @@
-import * as task  from './status.js';
+import * as task from './status.js';
 import './style.css';
 
 let list = [];
