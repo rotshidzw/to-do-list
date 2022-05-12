@@ -1,68 +1,30 @@
-<head><script defer src="runtime.js"></script></head>Html Webpack Plugin:
-<pre>
-  Error: Child compilation failed:
-  Module not found: Error: Can't resolve 'C  :\Users\sophi\to-do-list\src\index.html'   in 'C:\Users\sophi\to-do-list'
-  ModuleNotFoundError: Module not found: Er  ror: Can't resolve 'C:\Users\sophi\to-do-  list\src\index.html' in 'C:\Users\sophi\t  o-do-list'
-      at C:\Users\sophi\to-do-list\node_mod  ules\webpack\lib\Compilation.js:2016:28
-      at C:\Users\sophi\to-do-list\node_mod  ules\webpack\lib\NormalModuleFactory.js:7  98:13
-      at eval (eval at create (C:\Users\sop  hi\to-do-list\node_modules\tapable\lib\Ho  okCodeFactory.js:33:10), <anonymous>:10:1  )
-      at C:\Users\sophi\to-do-list\node_mod  ules\webpack\lib\NormalModuleFactory.js:2  70:22
-      at eval (eval at create (C:\Users\sop  hi\to-do-list\node_modules\tapable\lib\Ho  okCodeFactory.js:33:10), <anonymous>:9:1)      at C:\Users\sophi\to-do-list\node_mod  ules\webpack\lib\NormalModuleFactory.js:4  34:22
-      at C:\Users\sophi\to-do-list\node_mod  ules\webpack\lib\NormalModuleFactory.js:1  16:11
-      at C:\Users\sophi\to-do-list\node_mod  ules\webpack\lib\NormalModuleFactory.js:6  70:25
-      at C:\Users\sophi\to-do-list\node_mod  ules\webpack\lib\NormalModuleFactory.js:8  55:8
-      at C:\Users\sophi\to-do-list\node_mod  ules\webpack\lib\NormalModuleFactory.js:9  75:5
-  
-  - Compilation.js:2016 
-    [to-do-list]/[webpack]/lib/Compilation.    js:2016:28
-  
-  - NormalModuleFactory.js:798 
-    [to-do-list]/[webpack]/lib/NormalModule    Factory.js:798:13
-  
-  
-  - NormalModuleFactory.js:270 
-    [to-do-list]/[webpack]/lib/NormalModule    Factory.js:270:22
-  
-  
-  - NormalModuleFactory.js:434 
-    [to-do-list]/[webpack]/lib/NormalModule    Factory.js:434:22
-  
-  - NormalModuleFactory.js:116 
-    [to-do-list]/[webpack]/lib/NormalModule    Factory.js:116:11
-  
-  - NormalModuleFactory.js:670 
-    [to-do-list]/[webpack]/lib/NormalModule    Factory.js:670:25
-  
-  - NormalModuleFactory.js:855 
-    [to-do-list]/[webpack]/lib/NormalModule    Factory.js:855:8
-  
-  - NormalModuleFactory.js:975 
-    [to-do-list]/[webpack]/lib/NormalModule    Factory.js:975:5
-  
-  - child-compiler.js:169 
-    [to-do-list]/[html-webpack-plugin]/lib/    child-compiler.js:169:18
-  
-  - Compiler.js:551 finalCallback
-    [to-do-list]/[webpack]/lib/Compiler.js:    551:5
-  
-  - Compiler.js:577 
-    [to-do-list]/[webpack]/lib/Compiler.js:    577:11
-  
-  - Compiler.js:1196 
-    [to-do-list]/[webpack]/lib/Compiler.js:    1196:17
-  
-  
-  - Hook.js:18 Hook.CALL_ASYNC_DELEGATE [as     _callAsync]
-    [to-do-list]/[tapable]/lib/Hook.js:18:1    4
-  
-  - Compiler.js:1192 
-    [to-do-list]/[webpack]/lib/Compiler.js:    1192:33
-  
-  - Compilation.js:2787 finalCallback
-    [to-do-list]/[webpack]/lib/Compilation.    js:2787:11
-  
-  - Compilation.js:3092 
-    [to-do-list]/[webpack]/lib/Compilation.    js:3092:11
-  
-  
-</pre>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple ToDo list</title>
+    <script src="https://kit.fontawesome.com/9c25278351.js" crossorigin="anonymous"></script>
+<script defer src="runtime.js"></script><script defer src="main.js"></script></head>
+<body>
+    <section>
+        <div class="container">
+            <header>
+                <h1>To Do Lists</h1>
+            </header>
+            <div class="to-do-list-container">
+                <h2>Today's To Do<i class="fas fa-sync icon1"></i></h2>
+                <form id="task-Form" action="POST" class="input-1">
+                    <input class="input-2" type="text" name="New Task" id="task-1" placeholder="Add to your list" required>
+                    <button id="task-2" type="submit"><i class="fas fa-plus-square icon"></i></button>
+                </form>
+                <ul class="list-1"></ul>
+                <div class="clear-div">
+                    <button class="clear-btn" type="button">Clear all completed</button>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
