@@ -16,24 +16,16 @@
 
 ## Getting Started
 
-**install visual basic code and npm install and webpack package**
 
 
+Install
 To get a local copy up and running follow these simple example steps.
 
-### Prerequisites
+Open terminal
+Clone this project by the command git clone https://github.com/rotshidzw/to-do-list
 
-### Setup
-
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
-
-
+cd <clone> folder
+Run npm start in your local browser or using Live Server in Visual Studio Code.
 
 ## Authors
 

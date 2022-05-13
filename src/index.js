@@ -1,4 +1,5 @@
-import * as task from './status.js';
+import * as task from './populate.js';
+import * as stat from './status.js';
 import './style.css';
 
 let list = [];
@@ -20,7 +21,7 @@ function todoList() {
     checkbox.type = 'checkbox';
     checkbox.classList.add('task-check');
     checkbox.addEventListener('click', () => {
-      task.status(item, list);
+      stat.status(item, list);
       todoList();
     });
     checkbox.checked = item.isCompleted;
@@ -31,10 +32,11 @@ function todoList() {
     taskText.addEventListener('change', () => {
       if (taskText.value.length > 0) {
         item.description = taskText.value;
-        task.saveLocal(list);
+        stat.saveLocal(list);
       }
     });
     taskElement.appendChild(taskText);
+
     const dragIcon = document.createElement('button');
     dragIcon.classList = 'far fa-trash-alt deleteBtn';
     taskElement.appendChild(dragIcon);
@@ -43,6 +45,23 @@ function todoList() {
   });
 }
 
+function removeItem(e) {
+  if (!e.target.classList.contains('deleteBtn')) {
+    return;
+  }
+  const btn = e.target;
+  list.forEach((task) => {
+    if (task.description === btn.parentElement.children[1].value) {
+      list.splice(list.indexOf(task), 1);
+    }
+  });
+  btn.closest('li').remove();
+  task.updateIndex(list);
+  stat.saveLocal(list);
+}
+
+listEl.addEventListener('click', removeItem);
+todoList();
 document.querySelector('#task-Form').addEventListener('submit', (event) => {
   event.preventDefault();
   task.add(list);
