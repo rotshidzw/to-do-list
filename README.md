@@ -1,15 +1,13 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
-#TO DO LIST
-> Description the project.
+# To Do list
 
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- HTML&CSS&JAVACSRIPT
+- VISUAL BASIC CODE
+- npm install
 
 ## Live Demo (if available)
 
@@ -18,39 +16,24 @@
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
 
 
+Install
 To get a local copy up and running follow these simple example steps.
 
-### Prerequisites
+Open terminal
+Clone this project by the command git clone https://github.com/rotshidzw/to-do-list
 
-### Setup
-
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
-
-
+cd <clone> folder
+Run npm start in your local browser or using Live Server in Visual Studio Code.
 
 ## Authors
 
 👤 **Author1**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: (https://github.com/rotshidzw)
+- Twitter: (https://twitter.com/footballlz )
+- LinkedIn: (https://www.linkedin.com/in/rochidzwa-chester-8062b6211/)
 
 ## 🤝 Contributing
 
